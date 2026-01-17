@@ -5,17 +5,50 @@ date: 2026-01-16
 categories: [Avalanche Safety, Data Science, Machine Learning]
 ---
 
-#### Introduction
 
-Venturing into the backcountry offers a unique sense of freedom that resort skiing cannot replicate. Fresh snow, untouched terrain, and quieter mountains attract many skiers who are eager to explore beyond controlled ski areas. However, with this freedom comes risk. Unlike resort terrain, the backcountry is not actively managed for avalanche safety, and decisions about where and when to travel often rest entirely on the individual. Understanding avalanche risk is therefore one of the most important skills for anyone planning to travel in avalanche-prone terrain.
+#### AVALANCHE!! AVALANCHE!!! 
 
-Avalanche forecasting has traditionally relied on expert judgment, field observations, and decades of accumulated knowledge. While this system has saved countless lives, it also faces challenges related to scale, uncertainty, and limited data coverage. As data science and machine learning become increasingly common in environmental risk prediction, an important question emerges: can these tools help improve how avalanche risk is assessed and communicated? This blog explores how data science might support avalanche forecasting, while recognizing the limitations and responsibilities that come with using predictive models in high-stakes environments.
+Below are clips of some avalanche incident that a backcountry skier could encounter. Remember, the mountains always speak for themselves. 
+
+<video width="800" controls>
+  <source src="media/avy2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+#### Another Scary Moment!
+
+<video width="800" controls>
+  <source src="media/avy1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+#### Don't worry, all the subjects in the clips were uninjured, but Phew!!! That is why Avalanche Rating is so IMPORTANT!! It helps you make better decisions out there!!
+
+
+#### My Personal Story
+Four years ago, I was caught in an avalanche along with 4 other skiers. Fortunately, all of us were partially buried with one person buried up to their neck. None of us were injuried. 
+
+The Cause? 
+A lack of understanding of avalanche risk, combined with a misinterpretation of the avalanche danger rating.
+
+But what if a more informative avalanche ratings could have prevented the incident. What if it can provide me with an avalanche probability? Or could even tell me the underlying factors that caused it. How useful would that be.
+
+Imagine a model that tells me, with 95% confidence, that there is an 80% chance of an avalanche occurring on this slope (a location that I input) because of (1) current air temperature, (2) 10 cm of recent snowfall in the last 24 hours, (3) a 45-degree slope angle, and (4) more hidden but less important causes.
+
+Perhaps that information would have been convincing enough for me, four years ago, to stay home that day—or at least choose a much safer place to ski.
+
+Below is the avalanche that caught me. I’m grateful and humbled to be alive.
+
+![](img/avy.png){fig-alt="Avalanche debris in backcountry terrain" width="800"}
+
+[Link to the news article](https://powdercanada.com/2022/05/five-skiers-caught-in-whistler-backcountry-avalanche/)
 
 #### What Is Avalanche Rating?
 
-An avalanche refers to a large mass of snow collapsing and rapidly sliding down a mountain slope. Avalanches can be extremely destructive, capable of burying people, damaging infrastructure, and altering landscapes within seconds. In North America, avalanches are responsible for roughly 30 to 40 fatalities each year, with many more close calls and injuries. The risk of avalanches affects all backcountry snow sports, including backcountry skiing, snowboarding, snowshoeing, and mountaineering.
+An Avalanche Rating is a scale on communicating how likely an avalanche would happen. 
 
-To help backcountry users make safer decisions, avalanche organizations publish daily avalanche danger ratings. In Canada, these ratings are published on Avalanche Canada and are intended to summarize the overall likelihood and potential consequences of avalanches within a given region. The danger scale typically ranges from Low to High (with additional categories such as Moderate and Considerable), providing a simplified overview of current conditions.
+To help backcountry users make safer decisions, avalanche organizations publish daily avalanche danger ratings. In Canada, these ratings are published on Avalanche Canada and are intended to summarize the overall likelihood of avalanches within a given region. The danger scale typically ranges from Low, Considerable, and High, which is a simplified overview of Avalanche Risks.
 
 These ratings are not meant to dictate whether someone should or should not travel in the backcountry. Instead, they serve as a decision-support tool that helps users understand the general level of risk and encourages them to adjust terrain choices, travel plans, and group behavior accordingly. For novice backcountry travelers, avalanche ratings are often the first layer of information consulted when planning a trip.
 

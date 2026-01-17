@@ -157,15 +157,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="introduction" class="level4">
-<h4 class="anchored" data-anchor-id="introduction">Introduction</h4>
-<p>Venturing into the backcountry offers a unique sense of freedom that resort skiing cannot replicate. Fresh snow, untouched terrain, and quieter mountains attract many skiers who are eager to explore beyond controlled ski areas. However, with this freedom comes risk. Unlike resort terrain, the backcountry is not actively managed for avalanche safety, and decisions about where and when to travel often rest entirely on the individual. Understanding avalanche risk is therefore one of the most important skills for anyone planning to travel in avalanche-prone terrain.</p>
-<p>Avalanche forecasting has traditionally relied on expert judgment, field observations, and decades of accumulated knowledge. While this system has saved countless lives, it also faces challenges related to scale, uncertainty, and limited data coverage. As data science and machine learning become increasingly common in environmental risk prediction, an important question emerges: can these tools help improve how avalanche risk is assessed and communicated? This blog explores how data science might support avalanche forecasting, while recognizing the limitations and responsibilities that come with using predictive models in high-stakes environments.</p>
+<section id="avalanche-avalanche" class="level4">
+<h4 class="anchored" data-anchor-id="avalanche-avalanche">AVALANCHE!! AVALANCHE!!!</h4>
+<p>Below are clips of some avalanche incident that a backcountry skier could encounter. Remember, the mountains always speak for themselves.</p>
+<video width="800" controls="">
+<source src="media/avy2.mp4" type="video/mp4">
+<p>Your browser does not support the video tag. </p>
+</video></section>
+<section id="another-scary-moment" class="level4">
+<h4 class="anchored" data-anchor-id="another-scary-moment">Another Scary Moment!</h4>
+<video width="800" controls="">
+<source src="media/avy1.mp4" type="video/mp4">
+<p>Your browser does not support the video tag. </p>
+</video></section>
+<section id="dont-worry-all-the-subjects-in-the-clips-were-uninjured-but-phew-that-is-why-avalanche-rating-is-so-important-it-helps-you-make-better-decisions-out-there" class="level4">
+<h4 class="anchored" data-anchor-id="dont-worry-all-the-subjects-in-the-clips-were-uninjured-but-phew-that-is-why-avalanche-rating-is-so-important-it-helps-you-make-better-decisions-out-there">Don’t worry, all the subjects in the clips were uninjured, but Phew!!! That is why Avalanche Rating is so IMPORTANT!! It helps you make better decisions out there!!</h4>
+</section>
+<section id="my-personal-story" class="level4">
+<h4 class="anchored" data-anchor-id="my-personal-story">My Personal Story</h4>
+<p>Four years ago, I was caught in an avalanche along with 4 other skiers. Fortunately, all of us were partially buried with one person buried up to their neck. None of us were injuried.</p>
+<p>The Cause? A lack of understanding of avalanche risk, combined with a misinterpretation of the avalanche danger rating.</p>
+<p>But what if a more informative avalanche ratings could have prevented the incident. What if it can provide me with an avalanche probability? Or could even tell me the underlying factors that caused it. How useful would that be.</p>
+<p>Imagine a model that tells me, with 95% confidence, that there is an 80% chance of an avalanche occurring on this slope (a location that I input) because of (1) current air temperature, (2) 10 cm of recent snowfall in the last 24 hours, (3) a 45-degree slope angle, and (4) more hidden but less important causes.</p>
+<p>Perhaps that information would have been convincing enough for me, four years ago, to stay home that day—or at least choose a much safer place to ski.</p>
+<p>Below is the avalanche that caught me. I’m grateful and humbled to be alive.</p>
+<p><img src="img/avy.png" class="img-fluid" alt="Avalanche debris in backcountry terrain" width="800"></p>
+<p><a href="https://powdercanada.com/2022/05/five-skiers-caught-in-whistler-backcountry-avalanche/">Link to the news article</a></p>
 </section>
 <section id="what-is-avalanche-rating" class="level4">
 <h4 class="anchored" data-anchor-id="what-is-avalanche-rating">What Is Avalanche Rating?</h4>
-<p>An avalanche refers to a large mass of snow collapsing and rapidly sliding down a mountain slope. Avalanches can be extremely destructive, capable of burying people, damaging infrastructure, and altering landscapes within seconds. In North America, avalanches are responsible for roughly 30 to 40 fatalities each year, with many more close calls and injuries. The risk of avalanches affects all backcountry snow sports, including backcountry skiing, snowboarding, snowshoeing, and mountaineering.</p>
-<p>To help backcountry users make safer decisions, avalanche organizations publish daily avalanche danger ratings. In Canada, these ratings are published on Avalanche Canada and are intended to summarize the overall likelihood and potential consequences of avalanches within a given region. The danger scale typically ranges from Low to High (with additional categories such as Moderate and Considerable), providing a simplified overview of current conditions.</p>
+<p>An Avalanche Rating is a scale on communicating how likely an avalanche would happen.</p>
+<p>To help backcountry users make safer decisions, avalanche organizations publish daily avalanche danger ratings. In Canada, these ratings are published on Avalanche Canada and are intended to summarize the overall likelihood of avalanches within a given region. The danger scale typically ranges from Low, Considerable, and High, which is a simplified overview of Avalanche Risks.</p>
 <p>These ratings are not meant to dictate whether someone should or should not travel in the backcountry. Instead, they serve as a decision-support tool that helps users understand the general level of risk and encourages them to adjust terrain choices, travel plans, and group behavior accordingly. For novice backcountry travelers, avalanche ratings are often the first layer of information consulted when planning a trip.</p>
 </section>
 <section id="background-and-challenges-of-the-current-avalanche-rating-model" class="level4">
